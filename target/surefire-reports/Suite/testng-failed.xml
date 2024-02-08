@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="Utilities.ExtendReportManager"/>
+  </listeners>
+  <test thread-count="5" name="Test2(failed)" verbose="0">
+    <parameter name="os" value="Windows"/>
+    <parameter name="browser" value="edge"/>
+    <groups>
+      <run>
+        <include name="Master"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="TestCases.TC006_HealthInsuranceNewTest">
+        <methods>
+          <include name="Setup"/>
+          <include name="test6"/>
+          <include name="test8"/>
+          <include name="TearDown"/>
+          <include name="test12"/>
+          <include name="test9"/>
+          <include name="test5"/>
+          <include name="test11"/>
+          <include name="test4"/>
+          <include name="test7"/>
+          <include name="test10"/>
+        </methods>
+      </class> <!-- TestCases.TC006_HealthInsuranceNewTest -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->

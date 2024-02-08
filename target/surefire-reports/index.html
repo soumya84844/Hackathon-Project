@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-passed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\2303546\eclipse-workspace\hackathon_project\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>2 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">24 methods,   24 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.TC006_HealthInsuranceNewTest" class="method navigator-link" hash-for-method="test1">test1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.TC006_HealthInsuranceNewTest" class="method navigator-link" hash-for-method="test1">test1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.TC006_HealthInsuranceNewTest" class="method navigator-link" hash-for-method="test10">test10</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.TC006_HealthInsuranceNewTest" class="method navigator-link" hash-for-method="test10">test10</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.TC006_HealthInsuranceNewTest" class="method navigator-link" hash-for-method="test11">test11</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.TC006_HealthInsuranceNewTest" class="method navigator-link" hash-for-method="test11">test11</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.TC006_HealthInsuranceNewTest" class="method navigator-link" hash-for-method="test12">test12</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.TC006_HealthInsuranceNewTest" class="method navigator-link" hash-for-method="test12">test12</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.TC006_HealthInsuranceNewTest" class="method navigator-link" hash-for-method="test2">test2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.TC006_HealthInsuranceNewTest" class="method navigator-link" hash-for-method="test2">test2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.TC006_HealthInsuranceNewTest" class="method navigator-link" hash-for-method="test3">test3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.TC006_HealthInsuranceNewTest" class="method navigator-link" hash-for-method="test3">test3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.TC006_HealthInsuranceNewTest" class="method navigator-link" hash-for-method="test4">test4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.TC006_HealthInsuranceNewTest" class="method navigator-link" hash-for-method="test4">test4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.TC006_HealthInsuranceNewTest" class="method navigator-link" hash-for-method="test5">test5</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.TC006_HealthInsuranceNewTest" class="method navigator-link" hash-for-method="test5">test5</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.TC006_HealthInsuranceNewTest" class="method navigator-link" hash-for-method="test6">test6</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.TC006_HealthInsuranceNewTest" class="method navigator-link" hash-for-method="test6">test6</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.TC006_HealthInsuranceNewTest" class="method navigator-link" hash-for-method="test7">test7</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.TC006_HealthInsuranceNewTest" class="method navigator-link" hash-for-method="test7">test7</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.TC006_HealthInsuranceNewTest" class="method navigator-link" hash-for-method="test8">test8</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.TC006_HealthInsuranceNewTest" class="method navigator-link" hash-for-method="test8">test8</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.TC006_HealthInsuranceNewTest" class="method navigator-link" hash-for-method="test9">test9</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.TC006_HealthInsuranceNewTest" class="method navigator-link" hash-for-method="test9">test9</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.TC006_HealthInsuranceNewTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test1">
+                  </a> <!-- test1 -->
+                  <span class="method-name">test1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test1">
+                  </a> <!-- test1 -->
+                  <span class="method-name">test1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test10">
+                  </a> <!-- test10 -->
+                  <span class="method-name">test10</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test10">
+                  </a> <!-- test10 -->
+                  <span class="method-name">test10</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test11">
+                  </a> <!-- test11 -->
+                  <span class="method-name">test11</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test11">
+                  </a> <!-- test11 -->
+                  <span class="method-name">test11</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test12">
+                  </a> <!-- test12 -->
+                  <span class="method-name">test12</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test12">
+                  </a> <!-- test12 -->
+                  <span class="method-name">test12</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test2">
+                  </a> <!-- test2 -->
+                  <span class="method-name">test2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test2">
+                  </a> <!-- test2 -->
+                  <span class="method-name">test2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test3">
+                  </a> <!-- test3 -->
+                  <span class="method-name">test3</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test3">
+                  </a> <!-- test3 -->
+                  <span class="method-name">test3</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test4">
+                  </a> <!-- test4 -->
+                  <span class="method-name">test4</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test4">
+                  </a> <!-- test4 -->
+                  <span class="method-name">test4</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test5">
+                  </a> <!-- test5 -->
+                  <span class="method-name">test5</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test5">
+                  </a> <!-- test5 -->
+                  <span class="method-name">test5</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test6">
+                  </a> <!-- test6 -->
+                  <span class="method-name">test6</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test6">
+                  </a> <!-- test6 -->
+                  <span class="method-name">test6</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test7">
+                  </a> <!-- test7 -->
+                  <span class="method-name">test7</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test7">
+                  </a> <!-- test7 -->
+                  <span class="method-name">test7</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test8">
+                  </a> <!-- test8 -->
+                  <span class="method-name">test8</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test8">
+                  </a> <!-- test8 -->
+                  <span class="method-name">test8</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test9">
+                  </a> <!-- test9 -->
+                  <span class="method-name">test9</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test9">
+                  </a> <!-- test9 -->
+                  <span class="method-name">test9</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\2303546\eclipse-workspace\hackathon_project\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;Utilities.ExtendReportManager&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;os&quot; value=&quot;Windows&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;Master&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;TestCases.TC006_HealthInsuranceNewTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test2&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;os&quot; value=&quot;Windows&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;edge&quot;/&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;Master&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;TestCases.TC006_HealthInsuranceNewTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test2 --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test2 (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Master</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">test1</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">test10</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">test11</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">test12</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">test2</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">test3</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">test4</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">test5</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">test6</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">test7</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">test8</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">test9</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Sanity</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">test1</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">test9</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(24);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'test9')
+data.setCell(0, 2, 'TestCases.TC006_HealthInsuranceNewTest')
+data.setCell(0, 3, 34558);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'test8')
+data.setCell(1, 2, 'TestCases.TC006_HealthInsuranceNewTest')
+data.setCell(1, 3, 34066);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'test8')
+data.setCell(2, 2, 'TestCases.TC006_HealthInsuranceNewTest')
+data.setCell(2, 3, 32101);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'test11')
+data.setCell(3, 2, 'TestCases.TC006_HealthInsuranceNewTest')
+data.setCell(3, 3, 15880);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'test11')
+data.setCell(4, 2, 'TestCases.TC006_HealthInsuranceNewTest')
+data.setCell(4, 3, 15448);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'test10')
+data.setCell(5, 2, 'TestCases.TC006_HealthInsuranceNewTest')
+data.setCell(5, 3, 13575);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'test9')
+data.setCell(6, 2, 'TestCases.TC006_HealthInsuranceNewTest')
+data.setCell(6, 3, 13539);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'test10')
+data.setCell(7, 2, 'TestCases.TC006_HealthInsuranceNewTest')
+data.setCell(7, 3, 13361);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'test1')
+data.setCell(8, 2, 'TestCases.TC006_HealthInsuranceNewTest')
+data.setCell(8, 3, 12604);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'test12')
+data.setCell(9, 2, 'TestCases.TC006_HealthInsuranceNewTest')
+data.setCell(9, 3, 7334);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'test12')
+data.setCell(10, 2, 'TestCases.TC006_HealthInsuranceNewTest')
+data.setCell(10, 3, 7171);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'test4')
+data.setCell(11, 2, 'TestCases.TC006_HealthInsuranceNewTest')
+data.setCell(11, 3, 6646);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'test1')
+data.setCell(12, 2, 'TestCases.TC006_HealthInsuranceNewTest')
+data.setCell(12, 3, 6250);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'test4')
+data.setCell(13, 2, 'TestCases.TC006_HealthInsuranceNewTest')
+data.setCell(13, 3, 5930);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'test2')
+data.setCell(14, 2, 'TestCases.TC006_HealthInsuranceNewTest')
+data.setCell(14, 3, 3288);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'test5')
+data.setCell(15, 2, 'TestCases.TC006_HealthInsuranceNewTest')
+data.setCell(15, 3, 3146);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'test5')
+data.setCell(16, 2, 'TestCases.TC006_HealthInsuranceNewTest')
+data.setCell(16, 3, 3131);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'test2')
+data.setCell(17, 2, 'TestCases.TC006_HealthInsuranceNewTest')
+data.setCell(17, 3, 2641);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'test7')
+data.setCell(18, 2, 'TestCases.TC006_HealthInsuranceNewTest')
+data.setCell(18, 3, 1142);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'test7')
+data.setCell(19, 2, 'TestCases.TC006_HealthInsuranceNewTest')
+data.setCell(19, 3, 978);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'test6')
+data.setCell(20, 2, 'TestCases.TC006_HealthInsuranceNewTest')
+data.setCell(20, 3, 310);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'test6')
+data.setCell(21, 2, 'TestCases.TC006_HealthInsuranceNewTest')
+data.setCell(21, 3, 226);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'test3')
+data.setCell(22, 2, 'TestCases.TC006_HealthInsuranceNewTest')
+data.setCell(22, 3, 200);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'test3')
+data.setCell(23, 2, 'TestCases.TC006_HealthInsuranceNewTest')
+data.setCell(23, 3, 162);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.TC006_HealthInsuranceNewTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">Setup(chrome, Windows)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">test1</span>
+                <span class="method-start">39569 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test2</span>
+                <span class="method-start">52714 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test3</span>
+                <span class="method-start">55868 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test4</span>
+                <span class="method-start">56424 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test5</span>
+                <span class="method-start">63422 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test6</span>
+                <span class="method-start">66972 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test7</span>
+                <span class="method-start">67765 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test8</span>
+                <span class="method-start">69314 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test9</span>
+                <span class="method-start">103697 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test10</span>
+                <span class="method-start">117591 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test11</span>
+                <span class="method-start">131245 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test12</span>
+                <span class="method-start">147474 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">155058 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-test before">
+                <span class="method-name">Setup(edge, Windows)</span>
+                <span class="method-start">157187 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">test1</span>
+                <span class="method-start">201163 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test2</span>
+                <span class="method-start">207929 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test3</span>
+                <span class="method-start">211616 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test4</span>
+                <span class="method-start">212159 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test5</span>
+                <span class="method-start">218416 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test6</span>
+                <span class="method-start">221888 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test7</span>
+                <span class="method-start">222599 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test8</span>
+                <span class="method-start">224021 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test9</span>
+                <span class="method-start">256526 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test10</span>
+                <span class="method-start">291478 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test11</span>
+                <span class="method-start">305367 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test12</span>
+                <span class="method-start">321202 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">328630 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

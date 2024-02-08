@@ -10,7 +10,7 @@ import Utilities.Takescreenshot;
 public class TC001_HomePageTest extends BaseClass{
 
 	
-	@Test(priority=1,groups= {"Master","Sanity"})
+	@Test(priority=1,groups= {"Master"})
 	public void test1() throws InterruptedException, IOException
 	{
 		HomePage home=new HomePage(driver);

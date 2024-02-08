@@ -13,7 +13,7 @@ import Utilities.Takescreenshot;
 public class TC003_CarInsuranceTest extends TC002_TravelDetailsTest {
 
 	
-	@Test(priority=9,groups= {"Master","Sanity"})
+	@Test(priority=9,groups= {"Master"})
 	public void test9() throws InterruptedException
 	{
 		HomePage home=new HomePage(driver);

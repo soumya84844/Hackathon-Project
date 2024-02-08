@@ -26,7 +26,7 @@ public class BaseClass {
 	public Logger log;
 	public Properties p;
 	
-	@BeforeTest(groups= {"Master","Sanity"})
+	@BeforeTest(groups= {"Master"})
 	@Parameters({"browser","os"})
 	public void Setup(String br,String os) throws IOException
 	{
@@ -87,7 +87,7 @@ public class BaseClass {
 	}
 	
 	
-	@AfterTest(groups= {"Master","Sanity"})
+	@AfterTest(groups= {"Master"})
 	public void TearDown()
 	{
 		log.info("Page closed");

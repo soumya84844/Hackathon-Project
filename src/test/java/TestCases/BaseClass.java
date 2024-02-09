@@ -10,7 +10,9 @@ import java.util.Scanner;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.*;
@@ -34,7 +36,11 @@ public class BaseClass {
 		FileReader file = new FileReader(".//src//test//resources//config.properties");
 		p = new Properties();
 		p.load(file);
-		
+		ChromeOptions chromeoption=new ChromeOptions();
+		//chromeoption.setExperimentalOption("excludeSwitches",new String[] {"enable-automation"});
+		chromeoption.addArguments("--disable-notifications");
+		EdgeOptions edgeoption=new EdgeOptions();
+		edgeoption.addArguments("--disable-notifications");
 		//Implementing selenium grid 
 	    //If execution env is remote then run with selenium grid in different os
 	    if(p.getProperty("execution_env").equalsIgnoreCase("remote"))
@@ -69,8 +75,8 @@ public class BaseClass {
 		//launching browser based on condition - locally
 		switch(br.toLowerCase())
 		{
-		case "chrome": driver=new ChromeDriver(); break;
-		case "edge": driver=new EdgeDriver(); break;
+		case "chrome": driver=new ChromeDriver(chromeoption); break;
+		case "edge": driver=new EdgeDriver(edgeoption); break;
 		default: System.out.println("No matching browser..");
 					return;
 		}

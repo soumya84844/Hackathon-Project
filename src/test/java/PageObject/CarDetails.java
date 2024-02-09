@@ -37,7 +37,7 @@ public class CarDetails extends BasePage{
 	public WebElement CarBrand;
 	
 	
-	@FindBy(xpath="//div[@id='modelScroll']/li[@data-modelid='546']")
+	@FindBy(xpath="//div[@id='modelScroll']/li[3]")
 	public WebElement CarModel;
 	
 	
@@ -48,7 +48,7 @@ public class CarDetails extends BasePage{
 	@FindBy(xpath="//ul[@class='varient_tab']/li[text()='Automatic']")
 	public WebElement CarVariant;
 	
-	@FindBy(xpath="//div[@id='variantScroll']/li/span/b[text()='ZXI AMT (1197 cc)']")
+	@FindBy(xpath="//div[@id='variantScroll']/li/span/b[1]")
 	public WebElement CarVariantType;
 	
 	

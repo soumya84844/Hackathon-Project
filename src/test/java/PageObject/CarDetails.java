@@ -1,6 +1,5 @@
 package PageObject;
 
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
@@ -11,7 +10,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import Utilities.ExcelUtils;
-import PageObject.HomePage;
 
 public class CarDetails extends BasePage{
 	
@@ -48,6 +46,7 @@ public class CarDetails extends BasePage{
 	@FindBy(xpath="//ul[@class='varient_tab']/li[text()='Automatic']")
 	public WebElement CarVariant;
 	
+	
 	@FindBy(xpath="//div[@id='variantScroll']/li/span/b[1]")
 	public WebElement CarVariantType;
 	
@@ -67,7 +66,7 @@ public class CarDetails extends BasePage{
 	@FindBy(xpath="//div[@class='textinput']/div[contains(text(),'mobile')][2]")
 	public WebElement PhoneErrorMessage;
 	
-	//@FindBy(xpath="//button[@id='btnLeadDetails']/span")
+	
 	@FindBy(xpath="//button[@id='btnLeadDetails']")
 	public WebElement Prices;
 	
@@ -75,41 +74,50 @@ public class CarDetails extends BasePage{
 	@FindBy(xpath="//a[@class='pb-logo']")
 	public WebElement logo;
 	
+	
+	//City is selected
 	public void CitySelection()
 	{
 		City.click();
 	}
 	
+	//Rto number selected
 	public void RtoSelection()
 	{
 		RTO.click();
 	}
 	
+	//Car Brand selected
 	public void BrandSelection()
 	{
 		CarBrand.click();
 	}
 	
+	//Car Model selected
 	public void ModelSelection()
 	{
 		CarModel.click();
 	}
 	
+	//Fuel Type selected
 	public void CarFuel()
 	{
 		FuelType.click();
 	}
 	
+	//Variant Selection
 	public void CarVariantSelection()
 	{
 		CarVariant.click();
 	}
 	
+	//VariantType selection
 	public void CarVariantTypeSelection()
 	{
 		CarVariantType.click();
 	}
 	
+	//Name passed in input box
 	public void Name() throws IOException
 	{
 		p=new Properties();
@@ -118,12 +126,14 @@ public class CarDetails extends BasePage{
 		Name.sendKeys(p.getProperty("name"));
 	}
 	
+	//Email passed to input box
 	public void Email() throws IOException
 	{
 		
 		Email.sendKeys(ExcelUtils.getCellData(xlfile, "Sheet2", 1, 0));
 	}
 	
+	//Mobile number given
 	public void Mobile() throws IOException
 	{
 		p=new Properties();
@@ -135,12 +145,17 @@ public class CarDetails extends BasePage{
 
 	}
 	
+	//Email error captured
 	public void EmailError() throws IOException
 	{
+		//printed in console
 		System.out.println(EmailErrorMessage.getText());
+		
+		//Email error written in excel
 		ExcelUtils.setCellData1(xlfile,"Sheet2", 1, 1, EmailErrorMessage.getText());
 	}
 	
+	//phone error captured
 	public void PhoneError()
 	{
 		System.out.println( PhoneErrorMessage.getText());
@@ -148,12 +163,14 @@ public class CarDetails extends BasePage{
 	
 	public void ClickPrices()
 	{
-		//Prices.click();
+
 
 		JavascriptExecutor js=(JavascriptExecutor)driver;
 		js.executeScript("arguments[0].click();",Prices);
 	}
 	
+	
+	//Back to home page
 	public void logo_press()
 	{
 		logo.click();

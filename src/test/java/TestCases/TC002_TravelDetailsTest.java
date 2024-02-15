@@ -21,19 +21,19 @@ public class TC002_TravelDetailsTest extends TC001_HomePageTest{
 
 		travel.Germany_click();
 		
-		log.info("Germany is selected");
+		log.info("Germany is selected");	
+		Thread.sleep(2000);
+		
 		
 		Takescreenshot ts=new Takescreenshot(driver);
 		ts.ScreenShot("Destination");
-		
-		
-		Thread.sleep(2000);
 	}
 	
 	@Test(priority=3,groups= {"Master"})
 	public void test3() throws InterruptedException
 	{
 		TravelDetails travel=new TravelDetails(driver);
+		
 		log.info("Continue button is clicked");
 		travel.Next();
 	}
@@ -45,11 +45,14 @@ public class TC002_TravelDetailsTest extends TC001_HomePageTest{
 		travel.StartDateSelection();
 		log.info("Start Date selected");
 		Thread.sleep(2000);
+		
 		travel.EndDateSelection();
 		log.info("End Date selected");
-		Thread.sleep(2000);
+		Thread.sleep(3000);
+		
+		
 		Takescreenshot ts=new Takescreenshot(driver);
-		ts.ScreenShot("Date");
+		ts.ScreenShot("Date Selection");
 		travel.Next();
 	}
 	
@@ -62,31 +65,41 @@ public class TC002_TravelDetailsTest extends TC001_HomePageTest{
 		log.info("two people selected");
 		travel.Traveller1Age();
 		log.info("Traveller1 age selected");
+		
 		travel.Traveller2Age();
 		log.info("Traveller2 age selected");
 		travel.Next();
+		
+		Takescreenshot ts=new Takescreenshot(driver);
+		ts.ScreenShot("Age Selection");
 		Thread.sleep(2000);
 		
 	}
 	
 	
 	@Test(priority=6,groups= {"Master"})
-	public void test6() throws InterruptedException
+	public void test6() throws InterruptedException, IOException
 	{
 		TravelDetails travel=new TravelDetails(driver);
 		travel.MedicalCondition();
+		Thread.sleep(3000);
 		log.info("MedicalConditions selected");
-//		WebDriverWait mywait=new WebDriverWait(driver,Duration.ofSeconds(20));
-//		mywait.until(ExpectedConditions.elementToBeClickable(travel.NextButton));
+		
+		Takescreenshot ts=new Takescreenshot(driver);
+		ts.ScreenShot("MedicalConditions");
 		travel.Next();
 	}
 	
 	@Test(priority=7,groups= {"Master"})
-	public void test7() throws InterruptedException
+	public void test7() throws InterruptedException, IOException
 	{
 		TravelDetails travel=new TravelDetails(driver);
 		travel.MobileNumber();
 		log.info("MobileNumber given");
+		
+		Takescreenshot ts=new Takescreenshot(driver);
+		ts.ScreenShot("MedicalConditions");
+		
 		travel.Next();
 		log.info("continue button is clicked");
 	}

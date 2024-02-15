@@ -1,6 +1,8 @@
 package Utilities;
 
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import org.testng.ITestContext;
 import org.testng.ITestListener;
@@ -22,6 +24,12 @@ public class ExtendReportManager extends BaseClass implements ITestListener
 	public ExtentReports extent;  //populate common info on the report
 	public ExtentTest test; // creating test case entries in the report and update status of the test methods
 	public void onStart(ITestContext context) {
+		
+		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());// time stamp
+		 
+		String repName = "Test-Report-" + timeStamp + ".html";
+
+		sparkReporter = new ExtentSparkReporter(".\\reports\\" + repName);// specify location of the report
 			
 		sparkReporter=new ExtentSparkReporter(System.getProperty("user.dir")+ "/reports/myReport.html");//specify location of the report
 		

@@ -20,8 +20,12 @@ public class TravelPlans extends BasePage{
 		super(driver);
 	}
 	
+	//path of excel file
 	String xlfile=System.getProperty("user.dir")+"\\TestData\\hack_excel.xlsx";
+	
+	//explicit wait
 	WebDriverWait mywait=new WebDriverWait(driver,Duration.ofSeconds(20));
+	
 	
 	@FindBy(xpath="//section[@class='newFilterSection sort']")
 	public WebElement SortButton;
@@ -51,28 +55,36 @@ public class TravelPlans extends BasePage{
 		//popup.click();
 	}
 	
+	
+	//sort button is clicked
 	public void Sort()
 	{
 	    mywait.until(ExpectedConditions.elementToBeClickable(SortButton));
 		SortButton.click();
 	}
 	
+	//low to high filter selected
 	public void Low()
 	{
 		LowToHigh.click();
 	}
 	
+	//First 3 lowest plans name and prices captured
 	public void Plan() throws IOException, InterruptedException
 	{
-		int length=Plans.size();
+		//only the first 3 lowest travel plans
 		for(int i=0;i<3;i++)
 		{
+			//writing plan names in excel sheet
 			ExcelUtils.setCellData(xlfile,"Sheet1", i+1, 0, Plans.get(i).getText());
 			System.out.println(Plans.get(i).getText());
 			System.out.println("Price:");
 			System.out.println(PlanPrice.get(i).getText());
+			//writing prices in excel sheet
 			ExcelUtils.setCellData1(xlfile,"Sheet1", i+1, 1, PlanPrice.get(i).getText());
 		}
+		
+		//back to home page
 		Title.click();
 	}
 	

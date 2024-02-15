@@ -23,6 +23,7 @@ public class HealthInsuranceNew extends BasePage{
 	}
 	
     String xl=System.getProperty("user.dir")+"\\TestData\\hack_excel.xlsx";
+    
 	@FindBy(xpath = "//li[@class=\"ruby-menu-mega shade mr\"]/child::a")
 	private WebElement insuranceDropDown;
 	
@@ -30,6 +31,8 @@ public class HealthInsuranceNew extends BasePage{
 	@FindBy(xpath = "//a[@class='headlink' and contains(text(),'Health Insurance')]/parent::h3/following-sibling::ul/li/a/span")
 	private List<WebElement> healthInsuranceList;
 	
+	
+	//Health insurance menu items listed
 	public void getHealthInsuranceList() throws IOException {
 
 		Actions action = new Actions(driver);

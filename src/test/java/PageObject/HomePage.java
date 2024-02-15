@@ -25,18 +25,20 @@ public class HomePage extends BasePage{
 	
 
 	
-	
+	//clicked on travel insurance 
 	public void TravelInsurance_click()
 	{
 		Travel.click();
 	}
 	
+	
+	//clicked on car insurance
 	public void CarInsurance_click()
 	{
 		Car.click();
 	}
 	
-	
+	//clicked on health insurance
 	public void HealthInsurance_click()
 	{
 		Health.click();

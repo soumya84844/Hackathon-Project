@@ -19,12 +19,13 @@ public class CarInsuranceHome extends BasePage{
 	@FindBy(xpath="//div[@class='dont-know-number']/a")
 	WebElement NoCarButton;
 	
-	
+	//Capturing the Car Insurance quote and printing it in the console
 	public void CarInsuranceQuote()
 	{
 		System.out.println(CarInsuranceQuote.getText());
 	}
 	
+	//clicked on NoCar option
 	public void NoCar()
 	{
 		NoCarButton.click();

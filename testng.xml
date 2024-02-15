@@ -22,7 +22,7 @@
    <test name="Test2">
   <parameter name ="browser" value="edge"/>
   <parameter name ="os" value="Windows"/>
-<groups>
+    <groups>
 		<run>
 			<include name="Master"/>
 		</run>

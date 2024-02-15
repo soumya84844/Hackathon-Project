@@ -33,14 +33,19 @@ public class BaseClass {
 	public void Setup(String br,String os) throws IOException
 	{
 		log=LogManager.getLogger(this.getClass());
+		
 		FileReader file = new FileReader(".//src//test//resources//config.properties");
 		p = new Properties();
 		p.load(file);
+		
 		ChromeOptions chromeoption=new ChromeOptions();
-		//chromeoption.setExperimentalOption("excludeSwitches",new String[] {"enable-automation"});
 		chromeoption.addArguments("--disable-notifications");
+		
+		
 		EdgeOptions edgeoption=new EdgeOptions();
 		edgeoption.addArguments("--disable-notifications");
+		
+		
 		//Implementing selenium grid 
 	    //If execution env is remote then run with selenium grid in different os
 	    if(p.getProperty("execution_env").equalsIgnoreCase("remote"))
@@ -69,18 +74,20 @@ public class BaseClass {
 		}
 		driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),capabilities);
 	    }
-	 //If execution_env is local then run in local system
-	else if(p.getProperty("execution_env").equalsIgnoreCase("local"))
-	{
-		//launching browser based on condition - locally
-		switch(br.toLowerCase())
+	    
+	    
+	    //If execution_env is local then run in local system
+		else if(p.getProperty("execution_env").equalsIgnoreCase("local"))
 		{
-		case "chrome": driver=new ChromeDriver(chromeoption); break;
-		case "edge": driver=new EdgeDriver(edgeoption); break;
-		default: System.out.println("No matching browser..");
-					return;
+			//launching browser based on condition - locally
+			switch(br.toLowerCase())
+			{
+			case "chrome": driver=new ChromeDriver(chromeoption); break;
+			case "edge": driver=new EdgeDriver(edgeoption); break;
+			default: System.out.println("No matching browser..");
+						return;
+			}
 		}
-	}
 		
 		driver.get(p.getProperty("url"));
 		driver.manage().deleteAllCookies();

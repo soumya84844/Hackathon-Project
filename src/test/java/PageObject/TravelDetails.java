@@ -79,41 +79,38 @@ public class TravelDetails extends BasePage{
 	@FindBy(xpath="//button[contains(text(),'View')]")
 	public WebElement Plans;
 	
-	public void Search(String des)
-	{
-		SearchBar.sendKeys(des);
-	}
-	
-	public void Destination_click()
-	{
-		Destination.click();
-	}
 	
 	
+	//Germany is selected 
 	public void Germany_click()
 	{
 		Germany.click();
 	}
 	
 
-	
+	//two people selected
 	public void PeopleNumber()
 	{
 		people.click();
 	}
 	
+	//age of traveller1 selected
 	public void Traveller1Age()
 	{
 		traveller1.click();
 		traveller1Age.click();
 	}
 	
+	
+	//age of traveller2 selected
 	public void Traveller2Age()
 	{
 		traveller2.click();
 		traveller2Age.click();
 	}
 	
+	
+	//travel start date selection
 	public void StartDateSelection()
 	{
 		StartDateBox.click();
@@ -121,19 +118,25 @@ public class TravelDetails extends BasePage{
 		
 	}
 	
+	
+	//travel end date selection
 	public void EndDateSelection()
 	{
 		
-		EndDateBox.click();
-		EndDate.click();
+		JavascriptExecutor js=(JavascriptExecutor)driver;
+		js.executeScript("arguments[0].click();",EndDateBox);
+		js.executeScript("arguments[0].click();",EndDate);
 	}
 	
+	
+	//medical conditions selected 
 	public void MedicalCondition()
 	{
 		JavascriptExecutor js=(JavascriptExecutor)driver;
 		js.executeScript("arguments[0].click();",Medical);
 	}
 	
+	//mobile number given and notification deactivated
 	public void MobileNumber()
 	{
 		MobileNumber.sendKeys("8240569231");
@@ -142,6 +145,8 @@ public class TravelDetails extends BasePage{
 		
 	}
 	
+	
+	//clicked on next button
 	public void Next() throws InterruptedException
 	{
 		try {

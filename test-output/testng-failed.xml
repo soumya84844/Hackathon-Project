@@ -4,6 +4,35 @@
   <listeners>
     <listener class-name="Utilities.ExtendReportManager"/>
   </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="os" value="Windows"/>
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="Master"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="TestCases.TC006_HealthInsuranceNewTest">
+        <methods>
+          <include name="test3"/>
+          <include name="Setup"/>
+          <include name="test9"/>
+          <include name="test12"/>
+          <include name="test1"/>
+          <include name="test6"/>
+          <include name="test8"/>
+          <include name="TearDown"/>
+          <include name="test2"/>
+          <include name="test5"/>
+          <include name="test11"/>
+          <include name="test4"/>
+          <include name="test10"/>
+          <include name="test7"/>
+        </methods>
+      </class> <!-- TestCases.TC006_HealthInsuranceNewTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
   <test thread-count="5" name="Test2(failed)">
     <parameter name="os" value="Windows"/>
     <parameter name="browser" value="edge"/>
@@ -15,10 +44,19 @@
     <classes>
       <class name="TestCases.TC006_HealthInsuranceNewTest">
         <methods>
+          <include name="test3"/>
           <include name="Setup"/>
-          <include name="TearDown"/>
           <include name="test12"/>
+          <include name="test9"/>
+          <include name="test1"/>
+          <include name="test6"/>
+          <include name="test8"/>
+          <include name="TearDown"/>
+          <include name="test2"/>
+          <include name="test5"/>
+          <include name="test4"/>
           <include name="test11"/>
+          <include name="test7"/>
           <include name="test10"/>
         </methods>
       </class> <!-- TestCases.TC006_HealthInsuranceNewTest -->

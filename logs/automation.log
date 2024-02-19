@@ -304,3 +304,9 @@
 12:08:49.842 [main] INFO  TestCases.TC006_HealthInsuranceNewTest - Traveller1 age selected
 12:08:56.394 [main] INFO  TestCases.TC006_HealthInsuranceNewTest - Traveller2 age selected
 12:10:53.101 [main] INFO  TestCases.TC006_HealthInsuranceNewTest - Page closed
+23:36:37.096 [main] INFO  TestCases.TC006_HealthInsuranceNewTest - Home page opened
+23:37:18.476 [main] INFO  TestCases.TC006_HealthInsuranceNewTest - Continue button is clicked
+23:41:39.373 [main] INFO  TestCases.TC006_HealthInsuranceNewTest - Page closed
+23:41:51.916 [main] INFO  TestCases.TC006_HealthInsuranceNewTest - Home page opened
+23:42:32.935 [main] INFO  TestCases.TC006_HealthInsuranceNewTest - Continue button is clicked
+23:46:53.609 [main] INFO  TestCases.TC006_HealthInsuranceNewTest - Page closed

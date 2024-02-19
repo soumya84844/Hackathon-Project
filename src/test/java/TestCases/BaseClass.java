@@ -40,10 +40,12 @@ public class BaseClass {
 		
 		ChromeOptions chromeoption=new ChromeOptions();
 		chromeoption.addArguments("--disable-notifications");
+		chromeoption.addArguments("--headless=new");
 		
 		
 		EdgeOptions edgeoption=new EdgeOptions();
 		edgeoption.addArguments("--disable-notifications");
+		edgeoption.addArguments("--headless=new");
 		
 		
 		//Implementing selenium grid 

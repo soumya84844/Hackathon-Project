@@ -29,7 +29,7 @@ public class ExtendReportManager extends BaseClass implements ITestListener
 		 
 		String repName = "Test-Report-" + timeStamp + ".html";
 
-		sparkReporter = new ExtentSparkReporter(".\\reports\\" + repName);// specify location of the report
+//		sparkReporter = new ExtentSparkReporter(".\\reports\\" + repName);// specify location of the report
 			
 		sparkReporter=new ExtentSparkReporter(System.getProperty("user.dir")+ "/reports/myReport.html");//specify location of the report
 		
@@ -42,7 +42,7 @@ public class ExtendReportManager extends BaseClass implements ITestListener
 		
 		extent.setSystemInfo("Computer Name","localhost");
 		extent.setSystemInfo("Environment","QA");
-		extent.setSystemInfo("Tester Name","Debarati");
+		extent.setSystemInfo("Tester Name","Soumyadeep");
 		extent.setSystemInfo("os","Windows10");
 		extent.setSystemInfo("Browser name","Chrome,Edge");
 					

@@ -46,7 +46,7 @@ public class TravelDetails extends BasePage{
 	@FindBy(xpath="//label[text()='Start date']//parent::div")
 	WebElement StartDateBox;
 	
-	@FindBy(xpath="//div[@class='MuiPickersDateRangeDay-rangeIntervalPreview']/button[@aria-label='Feb 15, 2024']")
+	@FindBy(xpath="//div[@class='MuiPickersDateRangeDay-rangeIntervalPreview']/button[@aria-label='Feb 22, 2024']")
 	public WebElement StartDate;
 	
 	
@@ -56,7 +56,7 @@ public class TravelDetails extends BasePage{
 	
 	
 	
-	@FindBy(xpath="//div[@class='MuiPickersDateRangeDay-rangeIntervalPreview']/button[@aria-label='Feb 23, 2024']")
+	@FindBy(xpath="//div[@class='MuiPickersDateRangeDay-rangeIntervalPreview']/button[@aria-label='Feb 28, 2024']")
 	public WebElement EndDate;
 	
 	
@@ -139,7 +139,7 @@ public class TravelDetails extends BasePage{
 	//mobile number given and notification deactivated
 	public void MobileNumber()
 	{
-		MobileNumber.sendKeys("8240569231");
+		MobileNumber.sendKeys("7980518221");
 		Slider.click();
 		Plans.click();
 		
